@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
         <view
-            class="com.android.dialer.calllog.CallTypeIconsView"
+            class="net.sf.chdir.dialer.calllog.CallTypeIconsView"
             android:id="@+id/call_type_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

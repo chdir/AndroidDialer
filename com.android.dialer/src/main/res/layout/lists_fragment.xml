@@ -57,7 +57,7 @@
          talkback enabled. It will still be announced when user drag or drop contact onto it.
          This is required since drag and drop event is only sent to views are visible when drag
          starts. -->
-    <com.android.dialer.list.RemoveView
+    <net.sf.chdir.dialer.list.RemoveView
         android:id="@+id/remove_view"
         android:layout_width="match_parent"
         android:layout_height="@dimen/tab_height"
@@ -93,6 +93,6 @@
 
         </LinearLayout>
 
-    </com.android.dialer.list.RemoveView >
+    </net.sf.chdir.dialer.list.RemoveView>
 
 </FrameLayout>

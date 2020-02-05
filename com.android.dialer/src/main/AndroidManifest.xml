@@ -15,12 +15,7 @@
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.dialer"
-    coreApp="true">
-
-    <uses-sdk
-        android:minSdkVersion="23"
-        android:targetSdkVersion="23" />
+    package="net.sf.chdir.dialer">
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -316,41 +311,9 @@
         <service android:name="com.android.contacts.common.location.UpdateCountryService"
             android:exported="false"/>
 
-        <!-- Main in-call UI activity.  This is never launched directly
-             from outside the phone app; instead, it's either launched by
-             the OutgoingCallBroadcaster (for outgoing calls), or as the
-             fullScreenIntent of a notification (for incoming calls.) -->
-   <!--     <activity android:name="com.android.incallui.InCallActivity"
-                  android:theme="@style/Theme.InCallScreen"
-                  android:label="@string/phoneAppLabel"
-                  android:excludeFromRecents="true"
-                  android:launchMode="singleInstance"
-                  android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation|keyboardHidden"
-                  android:exported="false"
-                  android:screenOrientation="nosensor"
-                  android:directBootAware="true"
-                  android:resizeableActivity="true">
-        </activity>
-
-        <service android:name="com.android.incallui.InCallServiceImpl"
-                 android:permission="android.permission.BIND_INCALL_SERVICE"
-                 android:directBootAware="true" >
-            <meta-data android:name="android.telecom.IN_CALL_SERVICE_UI" android:value="true" />
-            <meta-data android:name="android.telecom.IN_CALL_SERVICE_RINGING"
-                android:value="false"/>
-            <intent-filter>
-                <action android:name="android.telecom.InCallService"/>
-            </intent-filter>
-        </service>
-
-        &lt;!&ndash; BroadcastReceiver for receiving Intents from Notification mechanism. &ndash;&gt;
-        <receiver android:name="com.android.incallui.NotificationBroadcastReceiver"
-            android:directBootAware="true"
-            android:exported="false" />-->
-
         <provider
             android:name=".database.FilteredNumberProvider"
-            android:authorities="com.android.dialer.database.filterednumberprovider"
+            android:authorities="net.sf.chdir.dialer.database.filterednumberprovider"
             android:exported="false"
             android:multiprocess="false"
             />
@@ -367,7 +330,7 @@
 
         <provider
             android:name=".database.VoicemailArchiveProvider"
-            android:authorities="com.android.dialer.database.voicemailarchiveprovider"
+            android:authorities="net.sf.chdir.dialer.database.voicemailarchiveprovider"
             android:exported="false"
             android:multiprocess="false"
             />

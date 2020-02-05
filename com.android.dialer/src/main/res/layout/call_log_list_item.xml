@@ -94,7 +94,7 @@
                         android:orientation="horizontal">
 
                         <view
-                            class="com.android.dialer.calllog.CallTypeIconsView"
+                            class="net.sf.chdir.dialer.calllog.CallTypeIconsView"
                             android:id="@+id/call_type_icons"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"

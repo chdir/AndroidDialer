@@ -23,7 +23,7 @@
     android:visibility="visible"
     android:importantForAccessibility="1">
 
-    <com.android.dialer.voicemail.VoicemailPlaybackLayout
+    <net.sf.chdir.dialer.voicemail.VoicemailPlaybackLayout
         android:id="@+id/voicemail_playback_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
